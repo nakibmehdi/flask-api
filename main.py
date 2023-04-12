@@ -18,6 +18,3 @@ def convert():
         for i in res:
             data.append(ord(i))
         return str(data)
-
-
-application.run()
