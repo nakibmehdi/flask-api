@@ -8,7 +8,8 @@ phases:
       - pip3 install pytest
   build:
     commands:
-      - python -m pytest --junitxml=pytest_reports/pytest_report.xml
+      - make build
+      - make test
 
 reports:
   pytest_reports:
