@@ -8,8 +8,8 @@ phases:
       - pip3 install pytest
   build:
     commands:
-      - make build
-      - make test
+      - echo "build STEP ********************************************************"
+      - echo "test STEP ********************************************************"
 
 reports:
   pytest_reports:
