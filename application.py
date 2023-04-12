@@ -3,6 +3,10 @@ import ast
 application = Flask(__name__)
 
 
+def add(a, b):
+    return a+b
+
+
 @application.route('/')
 def main():
     return 'API V1.0'

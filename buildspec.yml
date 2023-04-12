@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip3 install pytest
+  build:
+    commands:
+      - make build
+      - make test
+
+reports:
+  pytest_reports:
+    files:
+      - pytest_report.xml
+    base-directory: pytest_reports/
+    file-format: JUNITXML

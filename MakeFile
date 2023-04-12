@@ -1,2 +1,4 @@
-hello:
+build:
 	echo "Hello, World"
+test:
+	python -m pytest --junitxml=pytest_reports/pytest_report.xml
