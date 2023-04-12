@@ -10,6 +10,7 @@ phases:
     commands:
       - echo "build STEP ********************************************************"
       - echo "test STEP ********************************************************"
+      - echo "step"
 
 reports:
   pytest_reports:
